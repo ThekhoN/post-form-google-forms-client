@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none"></iframe>
+  <form action="https://docs.google.com/forms/d/e/1FAIpQLSdo8BKYSiznP-CWloWn_0zz8rfOM_bgPpmCiV_jaJpb_87exw/formResponse" method="POST" target="hidden_iframe" onsubmit="embedFormSubmitHandler()">
+    <fieldset>
+      <label for="nameInput">Name: </label>
+      <input type="text" placeholder="name" id="nameInput" required="required" name="entry.1760571326"/>
+    </fieldset>
+    <fieldset>
+      <label for="phoneInput">Phone: </label>
+      <input type="text" placeholder="phone" id="phoneInput" required="required" name="entry.1729823452"/>
+    </fieldset>
+    <fieldset>
+      <label for="emailInput">Email: </label>
+      <input type="email" placeholder="user@email.com" id="emailInput" required="required" name="entry.514130554"/>
+    </fieldset>
+    <button id='submit' type="submit">submit</button>
+  </form>
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.1/axios.min.js"></script>
+  <script src="js/embedFormHandler.js">
+  </script>
+</body>
+</html>
